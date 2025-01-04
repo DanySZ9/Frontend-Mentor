@@ -43,8 +43,8 @@ body {
     color: greenyellow;
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 1rem; /* Unidad relativa */
-    margin-bottom: 10px;
+    font-size: 0.8rem; /* Unidad relativa */
+    margin: 0 0 20px 0;
 }
 .avatar-img p {
     color: black;
@@ -61,7 +61,7 @@ ul {
 }
 ul li {
     margin: 10px 0;
-    padding: 10px;
+    padding: 15px;
     border-radius: 12px;
     background-color: #062649a8;
     color: #fff;
@@ -84,20 +84,22 @@ ul li:hover {
     }
 
     .avatar-img img {
-        width: 120px;
+        width: 150px;
     }
 
     .avatar-img h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .avatar-img h2 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        margin: 0 0 20px 0;
     }
 
     ul li {
-        font-size: 0.9rem;
-        padding: 8px;
+        font-size: 1rem;
+        margin: 12px;
+        padding: 15px;
     }
 }
 
