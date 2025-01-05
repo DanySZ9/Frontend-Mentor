@@ -95,3 +95,36 @@ ul li:hover {
     background-color: greenyellow;
     box-shadow: 0 0 10px greenyellow;
 }
+
+@media (max-width: 450px){
+    body{
+        background-image: url(images/background-image-mobile.jpg);
+    }
+
+    .container {
+        width: 80%;   /* Ajuste flexible para pantallas pequeñas */
+    }
+    
+    .avatar-img img {
+        margin: 10px 0;
+        border-radius: 50%;
+        width: 125px;
+    }
+    .avatar-img h1 {
+        margin-bottom: 3.5px;
+    }
+    .avatar-img h2 {
+        font-size: 0.8rem; /* Unidad relativa */
+        margin: 0 0 15px 0;
+    }
+    .avatar-img p {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+
+    ul li {
+        margin: 10px 0;
+        padding: 12px;
+        border-radius: 15px;
+    }
+}
