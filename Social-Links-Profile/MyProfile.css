@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Soporte para navegadores basados en WebKit */
+    z-index: -100;
+}
+
+.container {
+    background-color: #5d6d7e;
+    text-align: center;
+    width: 90%;   /* Ajuste flexible para pantallas pequeñas */
+    max-width: 400px;
+    height: 35rem;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.avatar-img img {
+    margin: 20px 0;
+    border-radius: 50%;
+    width: 150px;
+}
+.avatar-img h1 {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem; /* Unidad relativa */
+    margin-bottom: 5px;
+}
+.avatar-img h2 {
+    color: greenyellow;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem; /* Unidad relativa */
+    margin: 0 0 20px 0;
+}
+.avatar-img p {
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+ul li {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #062649a8;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+ul li:hover {
+    color: black;
+    background-color: greenyellow;
+    box-shadow: 0 0 10px greenyellow;
+}
+
+@media (max-width: 450px){
+    body{
+        background-image: url(images/background-image-mobile.jpg);
+    }
+
+    .container {
+        width: 80%;   /* Ajuste flexible para pantallas pequeñas */
+    }
+    
+    .avatar-img img {
+        margin: 10px 0;
+        border-radius: 50%;
+        width: 125px;
+    }
+    .avatar-img h1 {
+        margin-bottom: 3.5px;
+    }
+    .avatar-img h2 {
+        font-size: 0.8rem; /* Unidad relativa */
+        margin: 0 0 15px 0;
+    }
+    .avatar-img p {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+
+    ul li {
+        margin: 10px 0;
+        padding: 12px;
+        border-radius: 15px;
+    }
+}
