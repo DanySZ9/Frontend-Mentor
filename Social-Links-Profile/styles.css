@@ -7,11 +7,7 @@
 }
 
 body {
-    background-image: url(images/background-image.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #141414 ;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -19,53 +15,41 @@ body {
     flex-wrap: wrap;
 }
 
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(3px); /* Efecto de desenfoque */
-    -webkit-backdrop-filter: blur(10px); /* Soporte para navegadores basados en WebKit */
-    z-index: -100;
-}
-
 .container {
-    background-color: #5d6d7e;
+    background-color: #1f1f1f ;
     text-align: center;
-    width: 90%;   /* Ajuste flexible para pantallas pequeñas */
+    width: 55%;   /* Ajuste flexible para pantallas pequeñas */
     max-width: 400px;
-    height: 35rem;
-    padding: 20px;
-    border-radius: 25px;
+    height: 32rem;
+    padding: 35px;
+    border-radius: 15px;
     margin: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .avatar-img img {
-    margin: 20px 0;
+    margin: 0 0 15px 0;
     border-radius: 50%;
-    width: 150px;
+    width: 100px;
 }
 .avatar-img h1 {
     color: white;
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 1.5rem; /* Unidad relativa */
-    margin-bottom: 5px;
+    font-size: 1.5rem;   /* Unidad relativa */
+    margin: 0 0 5px 0;
 }
 .avatar-img h2 {
     color: greenyellow;
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 0.8rem; /* Unidad relativa */
-    margin: 0 0 20px 0;
+    font-size: 0.9rem;   /* Unidad relativa */
+    margin: 0 0 30px 0;
 }
 .avatar-img p {
-    color: black;
+    color: white;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 20px;
 }
 
@@ -81,8 +65,8 @@ ul {
 ul li {
     margin: 10px 0;
     padding: 15px;
-    border-radius: 12px;
-    background-color: #062649a8;
+    border-radius: 10px;
+    background-color: #333333 ;
     color: #fff;
     font-family: "Inter", sans-serif;
     font-weight: 600;
@@ -97,34 +81,28 @@ ul li:hover {
 }
 
 @media (max-width: 450px){
-    body{
-        background-image: url(images/background-image-mobile.jpg);
-    }
-
     .container {
-        width: 80%;   /* Ajuste flexible para pantallas pequeñas */
+        width: 85%;   /* Ajuste flexible para pantallas pequeñas */
+        height: 35rem;
     }
     
     .avatar-img img {
-        margin: 10px 0;
+        margin: 0 0 15px 0;
         border-radius: 50%;
-        width: 125px;
-    }
-    .avatar-img h1 {
-        margin-bottom: 3.5px;
+        width: 100px;
     }
     .avatar-img h2 {
-        font-size: 0.8rem; /* Unidad relativa */
-        margin: 0 0 15px 0;
+        font-size: 0.85rem;   /* Unidad relativa */
+        margin: 0 0 25px 0;
     }
     .avatar-img p {
         font-size: 0.8rem;
-        margin-bottom: 15px;
+        margin: 0 0 25px 0;
+        width: 240px;
     }
 
     ul li {
-        margin: 10px 0;
+        margin: 0 0 10px 0;
         padding: 12px;
-        border-radius: 15px;
     }
 }
