@@ -10,24 +10,69 @@
 <body>
     <div class="container">
         <h1>Contact Us</h1>
-        <form action="first-name" method="post">
 
-            <label for="name">First Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
+        <form id="contact-form">
 
-            <label for="last-name">Last Name:</label><br>
-            <input type="text" id="last-name" name="last-name" required><br><br>
-
-            <label for="email">Email Address:</label><br>
-            <input type="email" name="email" id="email" required><br><br>
-
-            <label for="meassage">Message:</label>
-            <input type="text" id="message" name="message" required>
-
-            <input type="button" id="consent" name="consent">
-            <label for="consent">I consent to being contact by the team.</label>
+            <div class="form-item">
+                <div class="first-name">
+                    <label for="first-name">First Name <span class="requiered-input">*</span></label>
+                    <input type="text" id="first-name" name="first-name">
+                    <p class="form-alert">This field is requiered</p>
+                </div>
+                <div class="last-name">
+                    <label for="last-name">Last Name <span class="requiered-input">*</span></label>
+                    <input type="text" id="last-name" name="last-name">
+                    <p class="form-alert">This field is requiered</p>
+                </div>
+            </div>
+    
+            <div class="form-item">
+                <div class="email">
+                    <label for="email">Email Address: <span class="requiered-input">*</span></label>
+                    <input type="email" id="email" name="id">
+                    <p class="form-alert">Please enter a valid email address</p>
+                </div>
+            </div>
+    
+            <div class="form-item">
+                <label for="query-type">Query Type: <span class="requiered-input">*</span></label>
+                <div class="radio-inputs">
+                    <div class="radio-option">
+                        <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry">
+                        <label for="general-enquiry">General Enquiry</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="support-request" name="query-type" value="Support Request">
+                        <label for="support-request">Support Request</label>
+                    </div>
+                </div>
+                <p class="form-alert">Please select a query type</p>
+            </div>
+    
+            <div class="form-item">
+                    <label for="message">Message <span class="requiered-input">*</span></label>
+                    <textarea name="message" id="message" rows="4"></textarea>
+                    <p class="form-alert">This field is requiered</p>
+            </div>
+    
+            <div class="form-item">
+                <div>
+                    <input type="checkbox" name="consent" id="consent">
+                    <label for="consent">I consent to being contacted by the team <span class="requiered-input">*</span></label>
+                </div>
+                <p class="form-alert">To submit this form, please consent to being contacted</p>
+            </div>
+            <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
         </form>
-        <button>Submit</button>
     </div>
+
+    <div class="success-message">
+        <div class="message-header">
+            <img src="" alt="">Message Sent!
+        </div>
+        <p>Thanks for completing the form. WE'LL BE IN TOUCH SOON!</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
